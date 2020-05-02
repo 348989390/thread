@@ -1,0 +1,15 @@
+package com.example.thread;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+@SpringBootApplication
+public class ThreadApplication {
+
+    private volatile String str = "asd";
+
+    public static void main(String[] args) {
+        SpringApplication.run(ThreadApplication.class, args);
+    }
+
+}
